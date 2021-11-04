@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: #f2e16f;
+    background-image: url(./png/grids.png);
+}
+img{
+    max-width: 100%;
+}
+/*Onderstaand is voor de styling van de text*/
+@font-face {
+    font-family: 'FilsonPro';
+    src: url('./typografie/FilsonProRegular.otf');
+    font-style: normal;
+    font-weight: 300;
+  }
+@font-face {
+	font-family: 'AcuminVariable';
+	src: url('./typografie/AcuminVariableConcept.otf');
+	font-style: normal;
+	font-weight: 300;
+}
+h1 {
+	font-family: 'FilsonPro', sans-serif;   
+	font-size: 2.8em;
+	text-transform: uppercase;
+	color: #ffffff;
+    background-color: #f2210d;
+	font-weight: 700; /* bold */
+	margin-bottom: 0.5em;
+    padding: 3%;
+}
+h2 {
+	font-family: 'FilsonPro', sans-serif;   
+	font-size: 1.5em;
+	color: #fff;
+    background-color: #f26a85;
+	font-weight: 700; /* bold */
+	width: fit-content;
+	padding: 5px 20px 5px 20px;
+	margin-bottom: 0.5em;
+}
+h3 {
+	font-family: 'FilsonPro', sans-serif;   
+	font-size: 1.2em;
+	color: #f2210d;
+	font-weight: 700; /* bold */
+	width: fit-content;
+	padding: 5px 20px 5px 20px;
+	margin-bottom: 0.5em;
+    margin-top: 2%;
+}
+p {
+	font-family: 'AcuminVariable', sans-serif;
+	font-size: 1em;
+	color: #6D6F71;
+	margin-bottom: 0.5em;
+    margin: 2%;
+}
+li{
+    font-family: 'AcuminVariable', sans-serif;
+	font-size: 1em;
+	color: #6D6F71;
+	margin-bottom: 0.5%;
+}
+a{
+    font-family: 'AcuminVariable', sans-serif;
+    font-size: 1.2em;
+    color: black;
+}
+/*styling van de header en footer*/
+header{
+    border-bottom:solid;
+    color: #f28a1d;
+    display: flex;
+    flex-direction: row;
+}
+.scaling{
+    margin-top: 50%;
+    margin-left: 50%;
+}
+footer{
+    border-top: solid;
+    color: #f28a1d;
+}
+
+/*styling voor de homepage*/
+.backgroundimg{
+    background-image: url(./photos/damgrid.png);
+    width: 100%;
+    height: 370px;
+    margin: 50px auto;
+    background-size: cover;
+    margin: 0;
+}
+.h1styling{
+    font-family: 'FilsonPro', sans-serif;   
+	font-size: 2.8em;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: 700; /* bold */
+	margin-bottom: 0.5;
+}
+#styling ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    padding-top: 5%;
+    margin-top: 0;
+}
+#styling li{
+    list-style: none;
+    border-style: solid;
+    border-color: #f28a1d;
+    background-color: #f28a1d;
+    padding: 8%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+/*styling voor de nav*/
+.nav{
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    color: #f28a1d;
+    background-color: #f28a1d;
+    background-image: url(./photos/westergrid.png);
+    width: 100%;
+    height: 370px;
+    margin: 50px auto;
+    background-size: cover;
+    margin: 0;}
+.block{
+    width: fit-content;
+    margin: 5%;
+}
+.whitep{
+    font-family: 'FilsonPro', sans-serif;   
+	font-size: 1.2em;
+	color: #fff;
+    border: solid;
+    background-color: #f28a1d;
+	font-weight: 700; /* bold */
+	width: fit-content;
+	padding: 5px 20px 5px 20px;
+	margin-bottom: 0.5em;
+    margin-top: 2%;
+}
+
+/*styling lists*/
+.list{
+    display: flex;
+    flex-direction: row;
+}
+.li{
+    list-style: none;
+    border: solid;
+    color: #f28a1d;
+    background-color: #f28a1d;
+    width: fit-content;
+    margin: 5%;
+}
+
+
+/*styling voor the shortroutespage*/
+.h2styling{
+    font-family: 'FilsonPro', sans-serif;   
+	font-size: 1.5em;
+	color: #fff;
+    background-color: #f26a85;
+	font-weight: 700; /* bold */
+	width: fit-content;
+	padding: 5px 20px 5px 20px;
+	margin-bottom: 0.5em;
+}
+.liststyle{
+    list-style: square;
+    margin-left: 10%;
+    margin-right: 3;
+}
+/*onderstaand is voor de slyder voor de shortroutepage*/
+.slider{
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.image{
+    display: flex;
+    width: 100%;
+}
+.image img{
+    transition: all 0.15s ease;
+}
+.image input{
+    display: none;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 2%
+}
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 1%
+}
+.dots label:hover{
+    background: #ffffff;
+}
+#img1:checked ~ .m1{
+    margin-left: 0;
+}
+#img2:checked ~ .m2{
+    margin-left: -100%;
+}
+#img3:checked ~ .m3{
+    margin-left: -200%;
+}
+
+/*onderstaand is voor de slyder voor de longroutepage*/
+.slider{
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.image{
+    display: flex;
+    width: 100%;
+}
+.image img{
+    transition: all 0.15s ease;
+}
+.image input{
+    display: none;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 2%
+}
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 1%
+}
+.dots label:hover{
+    background: #ffffff;
+}
+#img4:checked ~ .m4{
+    margin-left: 0;
+}
+#img5:checked ~ .m5{
+    margin-left: -100%;
+}
+#img6:checked ~ .m6{
+    margin-left: -200%;
+}
+
+
+
