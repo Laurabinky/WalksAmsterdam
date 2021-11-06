@@ -5,7 +5,7 @@
 }
 body{
     background-color: #f2e16f;
-    background-image: url(./png/grids.png);
+    background-image: url(./png/griden.png);
 }
 img{
     max-width: 100%;
@@ -25,13 +25,13 @@ img{
 }
 h1 {
 	font-family: 'FilsonPro', sans-serif;   
-	font-size: 2.8em;
+	font-size: 2.6em;
 	text-transform: uppercase;
 	color: #ffffff;
     background-color: #f2210d;
 	font-weight: 700; /* bold */
 	margin-bottom: 0.5em;
-    padding: 3%;
+    padding: 2%;
 }
 h2 {
 	font-family: 'FilsonPro', sans-serif;   
@@ -51,14 +51,14 @@ h3 {
 	width: fit-content;
 	padding: 5px 20px 5px 20px;
 	margin-bottom: 0.5em;
-    margin-top: 2%;
 }
 p {
 	font-family: 'AcuminVariable', sans-serif;
 	font-size: 1em;
-	color: #6D6F71;
+	color: #000;
+    font-weight: 700;
 	margin-bottom: 0.5em;
-    margin: 2%;
+    margin: 4%;
 }
 li{
     font-family: 'AcuminVariable', sans-serif;
@@ -69,7 +69,9 @@ li{
 a{
     font-family: 'AcuminVariable', sans-serif;
     font-size: 1.2em;
-    color: black;
+    color: #000;
+    text-decoration: none;
+    
 }
 /*styling van de header en footer*/
 header{
@@ -117,14 +119,12 @@ footer{
     border-color: #f28a1d;
     background-color: #f28a1d;
     padding: 8%;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    margin: 2%;
+    margin-left: 2.5%;
 }
 
 /*styling voor de nav*/
 .nav{
-    display: flex;
-    flex-direction: column;
     border: solid;
     color: #f28a1d;
     background-color: #f28a1d;
@@ -133,22 +133,29 @@ footer{
     height: 370px;
     margin: 50px auto;
     background-size: cover;
-    margin: 0;}
+    margin: 0;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.nav section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 .block{
-    width: fit-content;
-    margin: 5%;
+    list-style: none;
+    background-color: #f28a1d;
+    padding: 8%;
+    margin: 5%
 }
 .whitep{
     font-family: 'FilsonPro', sans-serif;   
 	font-size: 1.2em;
 	color: #fff;
-    border: solid;
-    background-color: #f28a1d;
 	font-weight: 700; /* bold */
-	width: fit-content;
-	padding: 5px 20px 5px 20px;
-	margin-bottom: 0.5em;
-    margin-top: 2%;
 }
 
 /*styling lists*/
@@ -166,21 +173,21 @@ footer{
 }
 
 
-/*styling voor the shortroutespage*/
-.h2styling{
-    font-family: 'FilsonPro', sans-serif;   
-	font-size: 1.5em;
-	color: #fff;
-    background-color: #f26a85;
-	font-weight: 700; /* bold */
-	width: fit-content;
-	padding: 5px 20px 5px 20px;
+/*styling voor the shortroutespages*/
+.color{
+    font-family: 'AcuminVariable', sans-serif;
+	font-size: 1em;
+	color: #f28a1d;
+    font-weight: 700;
 	margin-bottom: 0.5em;
+    text-decoration: underline;
 }
 .liststyle{
     list-style: square;
     margin-left: 10%;
-    margin-right: 3;
+    margin-right: 4%;
+    color: #000;
+    font-weight: 700;
 }
 /*onderstaand is voor de slyder voor de shortroutepage*/
 .slider{
@@ -204,7 +211,7 @@ footer{
 .dots{
     display: flex;
     justify-content: center;
-    margin: 2%
+    margin: 2%;
 }
 .dots label{
     height: 20px;
@@ -273,6 +280,3 @@ footer{
 #img6:checked ~ .m6{
     margin-left: -200%;
 }
-
-
-
