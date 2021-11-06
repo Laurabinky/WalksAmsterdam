@@ -104,7 +104,9 @@ footer{
 	text-transform: uppercase;
 	color: #ffffff;
 	font-weight: 700; /* bold */
-	margin-bottom: 0.5;
+    margin: 0;
+    margin-top: 5%;
+	margin-bottom: 0.5%;
 }
 #styling ul{
     display: flex;
@@ -119,7 +121,8 @@ footer{
     border-color: #f28a1d;
     background-color: #f28a1d;
     padding: 8%;
-    margin: 2%;
+    margin-top: 2%;
+    margin-right: 2%;
     margin-left: 2.5%;
 }
 
